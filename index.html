@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div id="root">
+
+</div>
+
+
+<script src="https://unpkg.com/react@18/umd/react.development.js" ></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" ></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" ></script>
+
+
+<script type="text/babel">
+    const Box =
+        // box
+        React.createElement(
+        "div",
+        {
+            className: 'box'
+        },
+        // card
+        React.createElement(
+            "div",
+            {
+                className: 'card'
+            },
+            React.createElement(
+                "h1",
+                {
+                    className: 'card-title',
+                },
+                'Card'
+            ),
+            React.createElement(
+                "div",
+                {
+                    className: 'card-line'
+                },
+            ),
+            React.createElement(
+                "p",
+                {
+                    className: 'card-desc'
+                },
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus autem est nihil nulla. Delectus doloremque est illo impedit itaque libero nesciunt odio quas quidem? Eaque laboriosam quae voluptatibus. Aliquam aliquid animi, corporis cum delectus eveniet iste iusto laboriosam magni maiores molestiae necessitatibus neque obcaecati porro quisquam rem repellat rerum totam voluptate voluptatibus. Aliquam aliquid dolor dolore .'
+            ),
+            React.createElement(
+                "button",
+                {
+                    className: 'card-btn'
+                },
+                'NEXT'
+            )
+        ),
+        // type
+        React.createElement(
+            "div",
+            {
+                className: 'type'
+            },
+            React.createElement(
+                "p",
+                {
+                    className: 'type-intro'
+                },
+                'Typography'
+            ),
+            React.createElement(
+                "h2",
+                {
+                    className: 'type-title'
+                },
+                'Text-Align'
+            ),
+            React.createElement(
+                "p",
+                {
+                    className: 'type-desc'
+                },
+                'Utilities for controlling the alignment of text'
+            )
+        ),
+        // black
+        React.createElement(
+            "div",
+            {
+                className: 'black'
+            },
+            React.createElement(
+                "button",
+                {
+                    className: 'black-btn'
+                },
+                'BUTTON 1'
+            )
+        ),
+            React.createElement(
+                "form",
+                {
+                    className: 'form'
+                },
+                React.createElement(
+                    "label",
+                    null,
+                    'Enter your name:',
+                    React.createElement(
+                        "input",
+                        {
+                            className: 'form-name-inp'
+                        }
+                    )
+                ),
+                React.createElement(
+                    "label",
+                    null,
+                    'Enter your email:',
+                    React.createElement(
+                        "input",
+                        {
+                            className: 'form-email-inp'
+                        }
+                    )
+                ),
+                React.createElement(
+                    "button",
+                    {
+                        type: 'submit',
+                        className: 'form-btn'
+                    },
+                    'Subscribe'
+                )
+            )
+    )
+
+    const app = document.querySelector('#root')
+    const root = ReactDOM.createRoot(app)
+
+    root.render(Box)
+</script>
+<!--<script type="text/babel" src="./scripts/main.jsx"></script>-->
+
+</body>
+</html>
